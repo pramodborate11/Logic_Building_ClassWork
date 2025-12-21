@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void Dislay(int *ptr)  // ISSSUE
+{
+    int iCnt = 0; 
+    for(iCnt = 0; iCnt < 4; iCnt++)
+    {
+       printf("%d\n",*ptr);
+    }
+}
+
+int main()
+{
+    int Arr[] = {10,20,30,40};
+    
+    Dislay(Arr);               
+    return 0;
+}
